@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Elice Digital Baeum",sans-serif;
+}
+main {
+    margin-left: 30px;
+}
+nav {
+    background-color: gray;
+    width: 960px;
+    height: 60px;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+}
+
+div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(255, 251, 212);
+}
