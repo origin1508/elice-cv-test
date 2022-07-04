@@ -1,37 +1,78 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    font-family: "Elice Digital Baeum",sans-serif;
+    font-family: "Elice Digital Baeum", sans-serif;
 }
+
 main {
     margin-left: 30px;
 }
-nav {
-    background-color: gray;
-    width: 960px;
-    height: 60px;
+
+.menu {
+    background-color: rgb(150, 150, 150);
+    height: 50px;
 }
 
-nav ul li {
-    list-style-type: none;
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    width: 60px;
+    height: 50px;
     float: left;
+    line-height: 50px;
+    text-align: center;
 }
 
-nav ul li a {
-    display: block;
+.menu a {
     text-decoration: none;
     color: white;
-    width: 100px;
-    height: 60px;
-    line-height: 60px;
+    transition: all 0.5s ease-in;
+}
+
+.menu a:hover {
+    letter-spacing: 3px;
+    background-color: rgb(179, 168, 154);
+
+}
+div.image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+img:hover {
+    width: 300px;
+    height: 300px;
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 1s;
 }
 
 div.content {
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 footer {
-    height: 100px;
+    padding: 30px;
     background-color: rgb(255, 251, 212);
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.content {
+        display: block;
+    }
+}
 }

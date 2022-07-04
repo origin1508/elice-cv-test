@@ -2,28 +2,32 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width:=device-width, initial-scale=1.0" />
     <title>이력서</title>
     <link rel="stylesheet" href="index.css" />
     <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#" class="home">홈</a></li>
-          <li><a href="#cv" class="cv">이력서</a></li>
-        </ul>
-      </nav>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#" class="home">홈</a></li>
+            <li><a href="#cv" class="cv">이력서</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h1 id="cv">이력서</h1>
-      <h2>엘리스 토끼</h2>
+      <h1 id="cv">엘리스 토끼</h1>
+
       <div class="image">
         <img
-          src="https://images.unsplash.com/photo-1625580021758-da5925b27c12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+          src="./rabbit.png"
           alt="엘리스 토끼"
           width="300px"
+          height="300px"
         />
       </div>
 
@@ -65,8 +69,10 @@
     </main>
 
     <footer>
-      Author by: 엘리스 토끼 <br />
-      Copyright ⓒ 2016 - 2022 elice. All rights reserved.
+      <div class="copyright">
+        Author by: 엘리스 토끼<br />
+        ⓒ 2016 - 2022 elice. All rights reserved.
+      </div>
     </footer>
   </body>
 </html>
